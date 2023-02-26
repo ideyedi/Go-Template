@@ -1,5 +1,7 @@
-# Go_tutorial
+# Go Template  
+Author esji  
 
-ref. Go CodeLab
+### reference  
+Go CodeLab
 
 
