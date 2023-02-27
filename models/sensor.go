@@ -5,7 +5,6 @@ import (
 	"strings"
 	"time"
 
-	//"github.com/mingrammer/go-codelab/faker"
 	"faker"
 )
 
