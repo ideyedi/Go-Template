@@ -12,8 +12,7 @@ import (
 	"sync"
 	"time"
 
-	//"github.com/mingrammer/go-codelab/models"
-	"models"
+	models "go.template/models"
 )
 
 // worker struct has necessary information to run sensor data producing job

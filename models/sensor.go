@@ -5,7 +5,7 @@ import (
 	"strings"
 	"time"
 
-	"faker"
+	faker "go.template/faker"
 )
 
 // Sensor is common interface for any sensors

@@ -27,8 +27,7 @@ import (
 	"strings"
 	"sync"
 
-	//"github.com/mingrammer/go-codelab/models"
-	"models"
+	models "go.template/models"
 )
 
 /*
