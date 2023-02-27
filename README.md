@@ -9,9 +9,7 @@ sensor_client.go
 ## Gin Template
 gin_tuti.go
 default GIN 실행 파일  
-'''
-go run go_tuto.go
-''' 
+> go run go_tuto.go 
 
 ### reference  
 Go CodeLab
