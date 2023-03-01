@@ -1,18 +1,25 @@
 package main
 
-import "github.com/gin-gonic/gin"
+import (
+	"fmt"
+	"github.com/gin-gonic/gin"
+	routers "go.template/routers"
+	_ "log"
+)
 
 func main() {
 	//gin.SetMode(gin.ReleaseMode)
 	gin.SetMode(gin.DebugMode)
-	router := gin.Default()
+	r := gin.Default()
 
-	router.GET("/ping", func(c *gin.Context) {
+	r.GET("/ping", func(c *gin.Context) {
 		c.JSON(200, gin.H{
 			"message": "pong",
 		})
 	})
+	routers.Hello_route(r)
 
+	fmt.Println(routers.Test())
 	// 서버가 실행 되고 0.0.0.0:8080 에서 요청을 기다립니다.
-	router.Run()
+	r.Run()
 }
