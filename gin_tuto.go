@@ -2,9 +2,10 @@ package main
 
 import (
 	"fmt"
+	_ "log"
+
 	"github.com/gin-gonic/gin"
 	routers "go.template/routers"
-	_ "log"
 )
 
 func main() {

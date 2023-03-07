@@ -58,7 +58,7 @@ func sensorWorker(done <-chan struct{}, w worker, c *counter) {
 	}
 }
 
-func main() {
+func sensorClient() {
 	numCPUs := runtime.NumCPU()
 	runtime.GOMAXPROCS(numCPUs)
 

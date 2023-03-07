@@ -9,7 +9,7 @@ each http handler is initiated, decoding data to appropriate JSON file.
 Those datas are then logged to each sensor's log file
 (log/Accel.log , log/Temp.log , log/Gyro.log)
 */
-package main
+package sensorServer
 
 /*
 'models' package	: Stores basic sensor information in srtuct form
@@ -181,7 +181,7 @@ sync.WaitGroup is to hold main thread while go routines are still working
 Main thread indicates WaitGroup to wait 4 routines to stop.
 After goroutines we need is created, main thread has WaitGroup to wait goroutines.
 */
-func main() {
+func sensorServer() {
 	var wg sync.WaitGroup
 	// Sync WaitGroup ??
 	wg.Add(4)
