@@ -9,7 +9,7 @@ each http handler is initiated, decoding data to appropriate JSON file.
 Those datas are then logged to each sensor's log file
 (log/Accel.log , log/Temp.log , log/Gyro.log)
 */
-package sensorServer
+package main
 
 /*
 'models' package	: Stores basic sensor information in srtuct form
@@ -183,7 +183,10 @@ After goroutines we need is created, main thread has WaitGroup to wait goroutine
 */
 func sensorServer() {
 	var wg sync.WaitGroup
-	// Sync WaitGroup ??
+	// waitGroup이 뭔지 알아야함..
+	// 각 Listener, logger까지 총 4개의 루틴이 동작하는걸 기다리는 것
+	// waitGroup counter가 0 이하 일 경우 panic
+	// Wait, add가 동시에 호출되도 panic
 	wg.Add(4)
 
 	logBuf := make(chan logContent)
