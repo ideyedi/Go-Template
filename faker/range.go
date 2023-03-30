@@ -7,6 +7,7 @@ import (
 
 // getRandValueInRange creates random value in (range size - error, range size + error)
 func getRandValueInRange(rangeSize int, epsilon float64) float64 {
+	//
 	rand.Seed(time.Now().UTC().UnixNano())
 
 	maxDataWithError := float64(rangeSize) + 2*epsilon
